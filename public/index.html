@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chat App</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Chat App Using Sockets</h1>
 
-    <input type="text" id="newmsg" >
-    <button id="btn" >Send</button>
+    <input type="text" id="roomid" placeholder="roomid" />
+    <input type="text" id="username" placeholder="username" />
+    <input type="text" id="newmsg" placeholder="message" />
+    <button id="btn">Send</button>
 
-    <ul id="msglist">
+    <ul id="msglist"></ul>
 
-    </ul>
-
-
-
-    <script src="socket.io/socket.io.js"></script>
+    <script src="https://cdn.socket.io/4.4.0/socket.io.min.js" integrity="sha384-1fOn6VtTq3PWwfsOrk45LnYcGosJwzMHv+Xh/Jx5303FVOXzEnw0EpLv30mtjmlj" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
